@@ -1,4 +1,4 @@
-# Settings for Laravel 5.4 and up
+# JSON class for PHP 7.3 and up
 <p align="center">
 <a href="https://packagist.org/packages/finagin/json"><img src="https://img.shields.io/packagist/v/finagin/json.svg?style=flat-square" alt="Latest Version on Packagist"></a>
 <a href="https://styleci.io/repos/335910083"><img src="https://styleci.io/repos/335910083/shield" alt="StyleCI"></a>
@@ -9,12 +9,12 @@
 </p>
 
 * [Installation](#installation)
-* [Usage](usage)
-* [License](license)
+* [Usage](#usage)
+* [License](#license)
 
 ## Installation
 
-This package can be used in Laravel 5.4 or higher.
+This package can be used with PHP 7.3 or higher.
 You can install the package via composer:
 ```bash
 composer require finagin/json
@@ -27,14 +27,14 @@ use Finagin\Json\Facades\Json;
 
 try {
     // decode as object
-    Json::decode($jsonString);
-    Json::decodeAsObject($jsonString);
+    Json::decode($fromJson);
+    Json::decodeAsObject($fromJson);
     
     // decode as array
-    Json::decode($jsonString, 0, true);
-    Json::decodeAsObject($jsonString);
+    Json::decode($fromJson, 0, true);
+    Json::decodeAsArray($fromJson);
     
-    Json::encode($toJsonObject, JSON_PRETTY_PRINT);
+    Json::encode($toJson, JSON_PRETTY_PRINT);
 } catch (\JsonException $exception) {
     //
 }
