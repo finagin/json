@@ -1,7 +1,6 @@
 {
     "name": "finagin/json",
     "license": "MIT",
-    "type": "library",
     "description": "JSON class with throw exception",
     "authors": [
         {
