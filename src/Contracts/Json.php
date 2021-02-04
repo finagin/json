@@ -11,7 +11,7 @@ interface Json
     public static function additionalOptions(int $options): int;
 
     /**
-     * Returns the JSON representation of a value
+     * Returns the JSON representation of a value.
      *
      * @see https://php.net/manual/en/function.json-encode.php
      *
@@ -49,7 +49,7 @@ interface Json
     public static function encode($value, int $options = self::DEFAULT_OPTIONS, int $depth = self::DEPTH): string;
 
     /**
-     * Decodes a JSON string
+     * Decodes a JSON string.
      *
      * @see https://php.net/manual/en/function.json-decode.php
      *
@@ -85,7 +85,7 @@ interface Json
     public static function decode(string $json, int $options = self::DEFAULT_OPTIONS, bool $assoc = false);
 
     /**
-     * Decodes a JSON string
+     * Decodes a JSON string.
      *
      * @see https://php.net/manual/en/function.json-decode.php
      *
@@ -117,7 +117,7 @@ interface Json
     public static function decodeAsArray(string $json, int $options = self::DEFAULT_OPTIONS): array;
 
     /**
-     * Decodes a JSON string
+     * Decodes a JSON string.
      *
      * @see https://php.net/manual/en/function.json-decode.php
      *
