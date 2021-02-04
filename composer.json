@@ -1,0 +1,51 @@
+{
+    "name": "finagin/json",
+    "license": "MIT",
+    "type": "library",
+    "description": "JSON class with throw exception",
+    "authors": [
+        {
+            "name": "Igor Finagin",
+            "email": "Igor@Finag.in",
+            "homepage": "https://Finag.in",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "ext-json": "*",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Finagin\\Json\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Finagin\\Json\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Finagin\\Json\\JsonServiceProvider"
+            ],
+            "aliases": {
+                "Json": "Finagin\\Json\\Facades\\Json"
+            }
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
